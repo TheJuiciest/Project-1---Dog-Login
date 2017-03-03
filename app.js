@@ -52,6 +52,7 @@ apiRoutes.post('/authenticate', function(req, res) {	//this will create the toke
 
     if (!user) {				//if user doesn't exist, it returns this...
       res.json({ success: false, message: 'You sure you already signed up? No user has been found.' });  
+
     } else if (user) {
 
      
